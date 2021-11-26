@@ -80,7 +80,7 @@ function guardarRegistro(){
         'nombre': nombre.value,
         'telefono': telefono.value,
         'correo': correo.value,
-        'contrasena': pass.value
+        'contrasena': encriptar(pass.value)
     };
     
     let usuarios = obtener();
@@ -102,4 +102,8 @@ function obtener(){
     let usuarios = JSON.parse(objetosJSON);
    
     return usuarios;
+}
+
+function encriptar(palabra){
+    return btoa(palabra);
 }

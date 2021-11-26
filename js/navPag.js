@@ -46,7 +46,7 @@ document.getElementById("myHeadpage").innerHTML = `<div class="container-fluid p
 
       <li class="nav-item dropdown mr-5">
         <a class="nav-link dropdown-toggle" href="./../pages/catalogo.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-          Iniciar sesion
+          Iniciar sesión
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item navAttar_listDes" href="./../pages/loginUser.html">Usuario</a>

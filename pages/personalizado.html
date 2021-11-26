@@ -53,10 +53,10 @@
                 <div class="form-row">
                     <div class="col">
                         <label for="nombre">Nombre</label>    
-                        <input type="text" id="nombre" class="form-control" placeholder="Juan Carlos" >
+                        <input type="text" id="nombre" class="form-control" placeholder="Leonora" >
                     </div><!--nombre-->
                     <div class="col">
-                        <label for="nombre">Celular</label> 
+                        <label for="nombre">Teléfono</label> 
                         <input type="tel" id="tel" class="form-control" placeholder="XX-XX-XX-XX-XX">
                     </div><!--celular-->
                 </div><!--formRow-->
@@ -87,8 +87,8 @@
                     <div class="col divPerosonalizadoSelect">
                         <label for="tam">Artesan@</label>    
                         <select class="custom-select selectPersonalizado " id="artesanos" >
-                            <option selected>Seleciona</option>
-                            <option value="artesano1">Fabi</option>
+                            <option selected>Selecciona</option>
+                            <option value="Fabi">Fabi</option>
                         </select>
                     </div>
                   </div><!--formRow-->
@@ -101,16 +101,15 @@
                   <div class="row divPersonalizadoImagen">
                     <div class="col divPerosonalizadoSelect ">
                       <label for="tam">Imagen</label>
-                      <button id="upload_widget" class="btn btn-primary btn-lg">Subir foto</button>
+                      <button id="upload_widget" class="btn btn-lg" disabled>Subir foto</button>
                     </div>
                     <div class="col">
-                      <img class="imgPersonaizado" src="" alt="No se selecciono imagen" id="product_img">
+                      <img class="imgPersonaizado sepPersonalizado" src="" alt="No se seleccionó imagen" id="product_img">
                     </div>
                   </div>
                 </div>
              
-                
-                <button type="submit" class="btnEnviarPersonalizado" data-toggle="modal" data-target="#alertPersonalizado">Enviar</button>
+                <button type="submit" class="btnEnviarPersonalizado sepPersonalizado" data-toggle="modal" data-target="#alertPersonalizado" id="enviarPersonalizdo">Validar Información</button>
             </form><!--FORMULARIO-->
   </div><!--divTexto-->
 </div>

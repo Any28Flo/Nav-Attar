@@ -33,7 +33,7 @@ form.addEventListener('submit', e => {
         let usuarios = obtener();
         
         usuarios.forEach(usuario => {
-            if(usuario.correo == correo.value && usuario.contrasena == pass.value){
+            if(usuario.correo == correo.value && usuario.contrasena == encriptar(pass.value)){
                 console.log('Lo encontramos');
                 alertaLogin.innerHTML += `
                     <div class="alert alert-success" role="alert">
@@ -76,4 +76,8 @@ function obtener(){
     let usuarios = JSON.parse(objetosJSON);
     
     return usuarios;
+}
+
+function encriptar(palabra){
+    return btoa(palabra);
 }

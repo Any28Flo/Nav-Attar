@@ -1,11 +1,3 @@
-// objetos = [Obtener()];
-    
-//............................Declaracion de las funciones para Obtener y Guardar informacion de LocalStorage
-
-// function Obtener(){
-//     let Productos = JSON.parse(localStorage.getItem("Producto")); 
-//     return Productos;   
-// }
 
 /*-----------------------------------------------------------------
  ||  Funcion addItem        
@@ -138,7 +130,6 @@ function lista(){
 //dependiendo la pantalla se muestra un elemento
 function elementoCategoria(){
     let pantallaw = screen.width;
-    let pantallah = screen.height;    
     
     if (pantallaw < 481){
         lista();
@@ -263,15 +254,15 @@ function elementoCategoria(){
         'descripcion':'Muñequita con mejillas sonrojadas y cabello chino, recuerda que puedes personalizarlo a tu gusto'},
 ];
 
-
+/**Descomentar lineas de abajo para generar el local de los productos iniciales
+ * comenar a siguiente vez
+ */
 // let objetosJSON = JSON.stringify(objetosTexto); //produtos a JSON
 // localStorage.setItem("objetos", objetosJSON); //En localStorage
 
 
 let productosJSON = localStorage.getItem("objetos"); //Lo tomamos del local
 let productos = JSON.parse(productosJSON);
-
-console.log(productos);
 
 /*-----------------------------------------------------------------
  ||  Elementos para filtrar dependiento la categoria seleccionada desde la nav       

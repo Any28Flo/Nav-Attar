@@ -12,12 +12,14 @@
 .carousel-item {
 
     margin: 20px;
-
+    
     padding-top:10px;
     padding-left: 90px;
     padding-right: 90px;  
 }
-
+.imagen img{
+    border-radius: 150px;
+}
 
 /*---------------------------------------------------------------
  ||  Titulos de colores 
