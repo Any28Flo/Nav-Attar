@@ -75,7 +75,8 @@
 }
 
 .descriptionArtesano p{
-    font-size: 17px;
+    text-align: center;
+    font-size: 3em;
 }
 
 #botones{

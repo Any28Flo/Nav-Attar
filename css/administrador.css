@@ -1,0 +1,69 @@
+.artImg img{
+    width: 10em;
+    height: auto;
+}
+
+
+.card-img-top{
+    width: 10em;
+    height: auto;
+}
+
+.cardcom{
+    background-color: #C4C4C4;  
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.contenidoArt{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    
+    /* align-items: center; */
+}
+
+.ap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15rem;
+}
+
+.card-body{ 
+    justify-content: space-between;
+    
+}
+
+/* .card-header{
+    display: flex;
+    flex-direction: row;
+} */
+
+.modBut{
+    align-self: right;
+}
+
+.eliminar{
+    align-self: flex-end;
+}
+
+.pIndividual img{
+    border-radius: 1.5em;
+}
+
+.navcon a{
+    color: black;
+}

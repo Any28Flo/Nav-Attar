@@ -64,6 +64,7 @@ body{
     border-bottom: 1vw solid #867FB3;
     padding: 3em 0;
     animation: movimientoLado 5s;
+    
 }
 
 .elemento-rev{
@@ -89,6 +90,18 @@ body{
     font-weight: 400;
 }
 
+#logocom{
+
+    width: 450px;
+    height: 450px;
+}
+
+#gatobolita{
+
+    width: 380px;
+    height: 380px;
+
+}
 
 /*-----------------------------------------------------------------
  ||  presentacion        
@@ -110,6 +123,19 @@ body{
 .textPresentacion p > span{
     font-size: 3vw;
     font-weight: 700;
+}
+
+#navNosotros{
+    font-size: 50px;
+    font-family: 'Petemoss', cursive;
+    font-weight: bolder;
+    color: transparent;
+    background: linear-gradient(to left, #ff5bf9, #7B68EE, #a47fcd, #08c0ff, #ff5bf9);    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    animation: color 3s linear infinite;
+    background-size: 500%;
+
 }
 
 
@@ -381,18 +407,7 @@ body{
     animation-name: movimientoLado;
     animation-duration: 5s;
 }
-/*contenedor segunda fila de fotos*/
-/*.contenedor {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    padding-top: 1px;
-    gap: 16px;
-    text-align: center;
-    margin-bottom: 3em;
-    animation-name: movimientoLadoD;
-    animation-duration: 5s;   
-}*/
+
 
 .centrado{
     display: flex;
@@ -405,6 +420,10 @@ body{
 .container h5 a, .contenedor h5 a{
     text-align: center;
     font: var(--textTituloDes);
+    font-size: 30px;
+    color: black;
+        
+
 }
 
 .card img{
@@ -424,3 +443,7 @@ body{
     /* font-size: 1em; */
     color: black;
 }
+
+
+
+

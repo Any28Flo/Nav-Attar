@@ -1,102 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contactos</title>
-   <!--Nuestro CSS-->
-   <link rel="stylesheet" href="../css/main.css">
-   <!-- Icono Nav-Attar -->
-   <link rel="icon" type="image/ng" href="./img/logos/gatoLogo.png">
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-   <!--Font Montserrat-->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanos</title>
 
+      <!--Nuestro CSS-->
+  <link rel="stylesheet" href="./../css/ArtersanoAdmin.css">
+  <!-- cambiar direcccion de css -->
+  <link rel="stylesheet" href="./../css/main.css">
+
+  <!-- Icono Nav-Attar -->
+  <link rel="icon" type="image/png" href="./img/logos/gatoLogo.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!--Font Montserrat-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">    
+
+    <title>Artesanos Admin</title>
 </head>
 <body>
-<!--Nav-->
+  
+  <header>
+    <div class="container-fluid px-0" style="background-color: #BDB2FF; height:6rem"></div>
+  </header>
     
-  <header id="myHeadpage"></header> 
-    
-<!--Contenido-->
+      <div class="container-fluid todo">
+        <div class="row ">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <div class="Artesano">
+                            <div class="infoArtesano text-center">
+                                <div class="subInfo">
+                                <!--imagen y nombre del artesano-->
+                                <div class="ArtImg">
+                                    <img src="./../img/Nosotros/pao.jpg" alt="">
+                                </div>
+                                <div class="ArtNombre">
+                                    <h5>Nombre Artesano</h5>
+                                </div>
+                            
+                            <div class="ArteMenu">
+                                <!--menu del artesano-->
+                                <div class="catergorias">
+                                    <div class="btn-group-vertical">
+                                      <a class="btn" href="#" role="button" style="font-size: 17px;">Perfil</a>
+                                      <button type="button" class="btn disabled"></button>
+                                      <button type="button" class="btn disabled"></button>
+                                      <button type="button" class="btn disabled"></button>
+                                      <button type="button" class="btn disabled"></button>
+                                      <a class="btn" href="#" role="button" style="font-size: 17px;">Cerrar Sesión</a>
+                                    </div><!--btn-group-vertical-->
+                                </div><!--categorias-->
+                            </div><!--ArteMenu-->
+                            </div><!--subInfo-->
+                        </div><!--infoArtesano-->
+                      </div><!--artesano-->
+                        </div><!--col 1-->
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                          <div class="CardCompleto">
+                            <div class="navCard" style="width: 75rem;">
+                                <!--nav card-->
+                                <div class="card">
+                                    <div class="card-header">
+                                    <div class="row">
+                                      <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                                    
+                                      <div class="navcon">
+                                      <ul class="nav nav-tabs card-header-tabs">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" href="#">Productos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Pendientes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Comentarios</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Pedidos</a>
+                                        </li>
+                                      </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                                      <div class="modBut">
+                                        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong">
+                                          +
+                                        </button>
+                                      </div><!--Modbut-->
+                                      </div><!--col-->
+                                    </div><!--row -->
+                                  </div><!--card-header-->
+                                  <div class="card-body" id="list-items">
+                                    <!-- <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3"> -->
+                                     
+                                        
+                                      <!-- </div> -->
+                                  </div><!--card-body-->
+                                </div><!--card-->
+                            </div><!--navCard-->  
+                        </div><!--CardCompleto-->
+                        </div><!--col 1-->
+        </div><!--row 1-->
+      </div> <!--todo-->  
 
+        <footer id="footerModPag"></footer>
 
-
-
-<!--........................................Footer-->
-<footer>
-
-  <div class="container-fluid">
-    <div class="row">
-    
-      <div class=" col-sm-6 col-md-8 col-lg-5 col-xl-4">
-        <div class="row align-items-center">
-          <div class="col seccion">
-            <ul class="seccion-lista">
-              <li class="seccion-lista_elemento"><a href="./contactoNav.html">Contacto Nav-Attar</a></li>
-              <li class="seccion-lista_elemento"><a href="./contactoEquipo.html">Contacto Equipo</a></li>
-              <li class="seccion-lista_elemento"><a href="#">Artesanos</a></li>
-            </ul>
-          </div><!--seccion1-->
-          <div class="col seccion">
-            <ul class="seccion-lista" >
-              <li class="seccion-lista_elemento"><a href="#">Nosotros</a></li>
-              <li class="seccion-lista_elemento"><a href="">Catálogo</a></li>
-              <li class="seccion-lista_elemento"><a href="#">Inicio Sesión</a></li>
-            </ul>
-          </div><!--seccion2-->
-        </div><!--row-->    
-      </div><!--links-->
-
-
-      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-4 " >
-        <div class="row justify-content-center">
-          <div class="col-8  logo">
-          
-            <div class="logo-img">
-                <img class="img-logo" src="./../img/logos/gatoLogo.png" alt="Logo Nav-Attar">
-            </div><!--logo-->
-            <div class="logo-nombre">
-              <h2>Nav-Attar</h2>
-            </div><!--nombre-->
-            <div class="logo-social">
-              <img class="logo-social_btn" src="./../img/iconos/social/facebook.png" alt="icon-facebook" >
-              <img class="logo-social_btn" src="./../img/iconos/social/gorjeo.png" alt="icon-twitter">
-              <img class="logo-social_btn" src="./../img/iconos/social/instagram.png" alt="icon-instragram">
-            </div><!--redes-->
-          
-          </div><!--col-->
-        </div><!--row-->
-      </div><!--logo-->
-    
-
-      <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 agradecimiento" >
-        <h5>Hecho con amor ❤️ de: <br> <a href="https://mexico.generation.org/" >@GenerationMx</a> por <a href="/pages/contactoEquipo.html#alejandro">Alejandro</a>, <a href="/pages/contactoEquipo.html#brandon"> Brandon</a>, <a href="/pages/contactoEquipo.html#dann"> Daniel,</a> <a href="/pages/contactoEquipo.html#daniel"> Erik</a>,  <a href="/pages/contactoEquipo.html#ilan">Ilan</a>, <a href="/pages/contactoEquipo.html#pablo">Pablo</a> y <a href="/pages/contactoEquipo.html#paola">Paola</a>.</h5>
-      </div><!--gracias-->
-    
-    </div><!--row-->
-  </div><!--container-->
-
-</footer>
-    </div><!--ContainerFooter-->
-
-    <script src="./../js/NavPages.js"></script>
-    <script src="./../js/javascript.js"></script>
-    <!--<script type="text/javascript" src="../js/contactVal.js"></script>-->
-    <script type="text/javascript" src="../js/administrador.js"></script>
+      <script src="./../js/footerPag.js"></script>
+    <script src="./ArteAdmin.js"></script>
+    <script src="../js/productosAdmin.js"></script>
+    <!-- cambiar js link -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-
-<!--MODALES ALERTA-->
-
-
-
 </body>
 </html>
-
-
