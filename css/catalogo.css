@@ -1,0 +1,321 @@
+.fondo{
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+    padding-bottom: 200px;
+    
+}
+
+/*-----------------------------------------------------------------
+ ||  Titulo       
+ -----------------------------------------------------------------*/
+
+.tituloCatalogo{
+    font-family: MiFuentePersonal;
+    font-size: 5em;
+    font-weight: 500;
+}
+
+/*-----------------------------------------------------------------
+ ||  Presentacion Personalizado        
+ -----------------------------------------------------------------*/
+
+ .dviPersonalizado{
+    padding: 0;
+    position: relative;
+}
+
+.dviPersonalizado a img{
+    display: inline-block;
+    position: static;
+    margin: auto;
+}
+
+.dviPersonalizado:hover{
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.dviPersonalizado_btn{
+    margin: 0;
+    padding: 0.5em;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    
+    background-color: #867FB3 ;
+    border-radius: 0.5em;
+    font-size: 2.4em;
+    font-weight: 500;
+    color: #000;    
+    transition-duration: 0.4s;
+    cursor: pointer; 
+}
+
+.dviPersonalizado_btn:hover{    
+    text-decoration: none;
+    color: #fff;
+    background-color: #6e66a0;
+}
+
+/*-----------------------------------------------------------------
+ ||  Tarjetas producto        
+ -----------------------------------------------------------------*/
+
+
+.card{
+    margin-top: 2em;
+    margin-left: 1vh;
+}
+
+.cardProducto{
+    display: flex;
+}
+
+.card a img{
+    width: 20em;
+    height: 25em;
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.container1 h1{
+    margin-top: 15px;
+}
+
+.elementosCardProducto a h2,.elementosCardProducto a h3{
+    color: #000;
+}
+
+.elementosCardProducto a:hover  {
+    text-decoration-color: #6e66a0;
+}
+
+.elementosCardProducto a:hover h2, .elementosCardProducto a:hover h3{
+    color: #6e66a0;
+    font-weight: 700;
+}
+
+.elementosCardProducto a{
+    align-items: flex-end;
+}
+
+.cardPrecio{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn_comprar{
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    align-items: flex-end;
+}
+
+#btnComprar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* position: relative; */
+    /* bottom: 0.1em; */
+    background-color: #BDB2FF;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 700;
+    /* height: 3em; */
+    padding: 0.5em 1em; 
+    /* margin-top: 2em ; */
+    
+}
+
+#btnComprar:hover{
+    background-color: #6e66a0;
+    color: #fff;
+    font-weight: 700;
+    border: 0.1em solid #fff;
+    transition-duration: 0.5s;
+}
+
+/*-----------------------------------------------------------------
+ ||  Menu izquierda        
+ -----------------------------------------------------------------*/
+ .menu_izq{
+    background-color: rgb(255, 230, 234);
+    color: black;
+    margin-top: 20px;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+.menu_izq li{
+    margin: 1em 2em;
+}
+
+
+.menu_izq li:hover{
+    padding: 1em 2em 1em 1em;
+    background-color: #BDB2FF;
+    border-radius: 0.5em;
+    transition-duration: 0.5s;
+
+}
+
+#menuCategorias{
+    background-color: #867FB3 ; 
+}
+
+#menuCategorias h3{
+    font-size: 1.8em;
+}
+
+.listaCategorias{
+    list-style: none;
+    padding: 0.5em 0;
+}
+
+.listaCategorias:hover{
+    font-size: 1em;
+    
+}
+.listaCategorias a, .listaCategorias button{
+    font-size: 1.5em;
+    color: #000;
+}
+
+.listaCategorias a:hover, .listaCategorias button:hover{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    /* padding: 1em 0; */
+}
+
+
+.tamañoCartProducto{
+    width: 28rem; height: 50rem;
+}
+
+
+
+/*-----------------------------------------------------------------
+ ||  dropdwon categorias        
+  -----------------------------------------------------------------*/
+.listaCategoriasDrop button{
+    height: 3em;
+    width: 100%;
+    font-size: 2.2em;
+    border-radius: 0.5em;
+    color: #000;
+    background-color: #BDB2FF;
+}
+
+.listaCategoriasDrop button:hover{
+    background-color: #6e66a0;
+    
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    background-color: #6e66a0;
+    
+}
+
+.menuListaCategorias{
+    width: 100%;
+}
+
+.menuListaCategorias a{
+    font-size: 2.2em;
+    margin: 1em 0;
+    height: 100%;
+}
+
+.menuListaCategorias a:hover{
+    background-color: #BDB2FF;
+    height: 100%;
+    font-weight: 500;
+}
+
+
+
+/*-----------------------------------------------------------------
+ ||  modeloResponsivo        
+  -----------------------------------------------------------------*/
+
+
+/* NestHubMax xl */
+@media only screen and (max-width: 1281px) { 
+        
+    .tamañoCartProducto{
+        width: 28rem; height: 58rem;
+    }
+
+    .listaCategorias a{
+        font-size: 1.8em;
+    }
+
+    .elementosCardProducto p{
+        font-size: 1.4em;
+    }
+    
+    .elementosCardProducto h5{
+        font-size: 1.6em;
+    }
+
+    .elementosCardProducto .cardPrecio a h3{
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    
+    .elementosCardProducto a h2{
+        font-size: 2.2em;
+        margin-bottom: 0.5em;
+    }
+
+    #btnComprar{
+        font-size: 1.8em;
+    }
+
+
+}
+
+/* NestHub lg */
+@media only screen and (max-width: 1025px) { 
+    .tamañoCartProducto{
+        width: 23rem; height: 58rem;
+    }
+    
+}
+
+/* ipad md */
+@media only screen and (max-width: 769px) { 
+    
+    .tamañoCartProducto{
+        width: 34rem; height: 58rem;
+    }
+    
+    .dviPersonalizado_btn{
+        font-size: 2em;
+        left: 43%;
+    }
+}
+
+/* motoG4 sm */
+@media only screen and (max-width: 480px) { 
+    .tamañoCartProducto{
+        width: 30rem; height: 58rem;
+    }
+    
+    .dviPersonalizado_btn{
+        font-size: 1.5em;
+        top:45%;
+        left: 30%;
+        padding: 0.5em 0.8em;
+    }
+    
+}

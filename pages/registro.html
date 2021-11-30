@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--Nuestro CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Icono Nav-Attar -->
+    <link rel="icon" type="image/png" href="./img/logos/gatoLogo.png">
+    <!--Font Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">    
+    <title>Registro</title>
+</head>
+<body>
+
+  <!--NAV-->
+  <header id="myHeadpage"></header>
+  
+
+
+  <div class="container sinAnimacion">    
+    
+        <div class="formularioTexto  FormReg">
+            <div class="headForm">
+                 <img src="../img/user.png" alt="" class="ImageReg">
+            </div>
+            <!--FORMULARIO-->
+            <form method="post" id="form" enctype="text/plain" class="camposReg" > 
+                
+                <div class="form-group NameReg padingReg">
+                    <!-- <label for="nombre">Nombre de Usuario</label> -->
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre de Usuario">
+                </div><!--nombre-->
+                <div class="form-group NumReg padingReg">
+                    <!-- <label for="telefono">Número de teléfono</label> -->
+                    <input type="tel" class="form-control" id="telefono" placeholder="Número de teléfono">
+                </div><!--numTelefono-->
+                <div class="form-group CorreReg padingReg">
+                    <!-- <label for="correo">Correo electrónico</label> -->
+                    <input type="email" class="form-control" id="correo" placeholder="Correo electrónico">
+                </div><!--correo-->
+                <div class="form-group ContraseñaReg padingReg especialPasReg ">
+                    <!-- <label for="tel">Contraseña</label> -->
+                    <input type="password" class="form-control " id="pass" placeholder="Contraseña">
+                    <small class="form-text text-muted">Usa 8 o más caracteres con una combinación de letras, números y símbolos. </small>
+                
+                </div><!--asunto-->
+                <div class="form-group ContraseñaReg2 padingReg">
+                    <!-- <label for="mensaje">Confirmar contraseña</label> -->
+                    <input type="password" class="form-control" id="confpass" placeholder="Confirmar contraseña">
+                </div><!--mensaje-->
+
+                <div class="text-center divBtn" >
+                    <button type="submit" class="btn btn-secondary BotonReg" data-toggle="modal" data-target="#aleRegistro">Registrarse</button>
+                </div>
+            </form>
+          </div>  <!--divFormularioText-->   
+  </div><!--divContainer-->
+
+
+  <div class="modal fade" id="aleRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="border-radius: 10px;">
+        <div class="modal-header" style="border-radius: 10px 10px 0px 0px;">
+          <h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
+          <button type="button" class="close equisContacNav" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="alertaRegistro">
+          
+        </div>
+      </div>
+    </div>
+  </div><!--modal-->
+
+
+
+
+
+  <footer id="footerModPag"></footer>
+
+  
+  
+  
+    <script src="./../js/navPag.js"></script>
+    <script src="./../js/footerPag.js"></script>
+    <script src="./../js/registroVal.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</body>
+</html>

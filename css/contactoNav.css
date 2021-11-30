@@ -1,0 +1,179 @@
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+
+
+.divLogo img{
+    width: 10em;
+    height: 10em;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.imagenFormulario img{
+    width: 60em;
+    height: 70em;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .2); 
+}
+
+
+.formularioTexto {
+    width: 50em;
+    height: 85em;
+    text-align: left;
+    padding: 4em 3em 1em 3em;
+    background-color: #CFE1FE;
+    border-radius: 2em;        
+}
+
+.formularioTexto label{
+    font: var(--textTituloDes);
+}
+
+.formularioTexto input{
+    height: 4em;
+    font: var(--textDescripcionCon) ;
+    border-radius: 1em;
+}
+
+.formularioTexto_men input{
+    height: 10em;
+}
+
+
+.divBtn{
+    margin-top: 3em;
+}
+
+#btnEnviar{
+    background-color: #E5B9F4;
+    height: 3em;
+    width: 13em;
+    border-radius: 1em;
+    font: var(--textDescripcionCon);
+    font-weight: 700;
+    font-size: 2em;
+    padding: 0.5em 0;
+}
+
+.modal-header {
+    background-color: #BDB2FF;
+}
+
+.modal-title{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.equisContacNav span{
+    font-size: 2em;
+}
+
+
+@media only screen and (max-width: 1281px){
+
+    .container{
+        display: block;
+        border: 0;
+    }
+
+    .formularioTexto{
+
+        width: auto;
+    }
+
+
+    .checo {
+        height: 50vh;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1025px){
+
+    .container{
+        display: block;
+        border: 0;
+       
+    }
+
+    .formularioTexto{
+
+        width: auto;
+    }
+
+    .checo {
+        height: 40vh;
+        width: auto;
+        margin-bottom: 20px;
+    }
+  
+
+}
+
+@media only screen and (max-width: 769px){
+
+    .container{
+        display: block;
+        border: 0;
+       
+    }
+
+    .formularioTexto{
+
+        width: auto;
+    }
+
+
+    .checo {
+        
+        display: none;
+    }
+
+  
+
+}
+
+@media only screen and (max-width: 480px){
+
+    .container{
+        display: block;
+        border: 0;
+       
+    }
+
+    .formularioTexto{
+
+        width: auto;
+    }
+
+
+    .checo {
+        
+        display: none;
+    }
+    
+.alert-dark{
+    background-color: #CFE1FE;
+    margin-top: 10px;
+}
+
+.alert-dark h1{
+    
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2px;
+    line-height : 15px;
+
+}
+}

@@ -1,0 +1,20 @@
+@import url(./artesanos.css);
+@import url(./clienteEstado.css);
+@import url(./personalizado.css);
+@import url(./productos.css);
+@import url(./productoVista.css);
+@import url(./vendedorEstado.css);
+@import url(./administrador.css);
+@import url(./loggin.css);
+@import url(./catalogo.css);
+@import url(./registro.css);
+
+
+.colorFondo{
+    background-color: #ECE4DB;
+    justify-content: center;
+    text-align: center;
+    padding: 1vw;
+    font-family:  'Montserrat', sans-serif; /*Cambiar a la variable de manera global*/
+}
+/**/

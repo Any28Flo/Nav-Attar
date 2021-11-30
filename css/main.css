@@ -1,0 +1,53 @@
+@import url(./navBar.css); /*barra navegacion*/
+@import url(./estilosFooter.css); /*footer*/
+@import url(./nosotros.css); /*nosotros*/
+@import url(./contactoEquipo.css); /*contactoEquipo*/
+@import url(./contactoNav.css); /*contactoNav*/
+@import url(./mainArea.css); /*pagina inicio*/
+@import url(./catalogo.css); /*catalogo*/ 
+@import url(./artersanoAdmin.css); /*paginaDeAgregarProductoNuevo*/
+@import url(./artesanosCards.css); /*paginaArtesanos*/
+@import url(./registro.css); /*formularioRegistro*/
+@import url(./loginUser.css); /*loginUser*/
+@import url(./loginArte.css); /*loginArtesano*/
+@import url(./personalizado.css); /*paginaParaPedidoPersonalizado*/
+@import url(./productoVista.css); /*productoIndividual*/
+
+/* @import url(./administrador.css); */
+/*@import url(./administrador.css); */
+
+
+:root{
+    --fontBase: 'Montserrat', sans-serif;
+    --textNav: 700 1.6em/1em var(--fontBase);
+    --textNavS: 500 1.6em/1em var(--fontBase);
+    --textFooter: 500 1.8em/1em var(--fontBase);
+    --textTitulos: 700 10em/1em var(--fontBase); 
+    --textTituloDes: 500 2.3em/1.5em var(--fontBase);
+    --textDescripcionT: 700 4em/1em var(--fontBase);
+    --textDescripcionCon: 400 1.4em/1.5em var(--fontBase);
+
+
+    --colorMoradoNav: #BDB2FF;
+    --colorMoradoNavHover: #998fcf;
+    --colorMoradoFoo: #867FB3;
+    --colorMoradoFooHover: #8d87b4;
+    --colorActive: #6e66a0;
+
+}
+
+*{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.noAnimacion, .sinAnimacion{
+    animation-name: none;
+    animation-duration: 0;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

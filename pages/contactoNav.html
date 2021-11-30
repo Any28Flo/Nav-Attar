@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono Nav-Attar -->
+    <link rel="icon" type="image/png" href="./../img/logos/gatoLogo.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--Nuestro CSS-->
+    <link rel="stylesheet" href="./../css/main.css">
+    <!--Font Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">    
+    <title>Nav-Attar | Contacto</title>    
+</head>
+<body >
+    
+    
+  <header id="myHeadpage"></header>
+  
+  <div class="container sinAnimacion formulario"> 
+        <div class="imagenFormulario">
+            <img src="./../img/muñequitos/checoperez.jpg" class="checo" alt="...">
+        </div><!--divImagen-->
+        
+        <div class="formularioTexto">
+            <div class="divLogo text-center">
+                <img src="./../img/logos/gatoLogo.png" alt="..." >
+
+            </div>
+            <!--FORMULARIO-->
+            <form method="post" id="form" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre Apellido">
+                </div><!--nombre-->
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+                </div><!--correo-->
+                <div class="form-group">
+                    <label for="tel">Celular</label>
+                    <input type="text" class="form-control" id="tel" placeholder="">
+                </div><!--asunto-->
+                <div class="form-group formularioTexto_men">
+                    <label for="mensaje">Mensaje</label>
+                    <input type="text" class="form-control" id="mensaje" placeholder="¡Hola!">
+                </div><!--mensaje-->
+
+                <div class="text-center divBtn" >
+                  <input type="submit" name="submit" value="¡Enviar!"  class="btn btn-light" data-toggle="modal" data-target="#alert" > 
+                  <!--<p class="warning" id="alertas"></p>-->  
+                </div>
+              </div>
+            </form>
+          
+  </div><!--divTexto-->
+
+    <!--MODALES ALERTA-->
+
+  <div class="modal fade" id="alert" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="border-radius: 10px;" >
+          <div class="modal-header" style="border-radius: 10px 10px 0px 0px;" >
+            <h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
+            <button type="button" class="close equisContacNav " data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" >&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="alerta">
+            
+          </div>   
+        </div>
+      </div>
+  </div>
+
+   
+
+  <footer id="footerModPag"></footer>
+
+  <script src="./../js/navPag.js"></script>
+  <script src="./../js/footerPag.js"></script>
+  <script src="../js/contactVal.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

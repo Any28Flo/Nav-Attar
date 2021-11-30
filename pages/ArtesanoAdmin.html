@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanos</title>
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+      <!--Nuestro CSS-->
+  <link rel="stylesheet" href="./../css/ArtersanoAdmin.css">
+  <!-- cambiar direcccion de css -->
+  <link rel="stylesheet" href="./../css/main.css">
+
+  <!-- Icono Nav-Attar -->
+  <link rel="icon" type="image/png" href="./img/logos/gatoLogo.png">
+  
+  <!--Font Montserrat-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">    
+</head>
+<body>
+  
+  <header>
+    <div class="container-fluid px-0" style="background-color: #BDB2FF; height:6rem"></div>
+  </header>
+  <!-- <header id="myHeadpage"></header>  -->
+    
+      <div class="container-fluid todo">
+        <div class="row ">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <div class="Artesano">
+                            <div class="infoArtesano text-center">
+                                <div class="subInfo">
+                                <!--imagen y nombre del artesano-->
+                                <div class="ArtImg">
+                                    <img src="./../img/muñequitos/fabi.jpg" alt="">
+                                </div>
+                                <div class="ArtNombre">
+                                    <h5>Nombre Artesano</h5>
+                                </div>
+                            
+                            <div class="ArteMenu">
+                                <!--menu del artesano-->
+                                <div class="catergorias">
+                                    <div class="btn-group-vertical">
+                                      <a class="btn" href="#" role="button" style="font-size: 17px;">Perfil</a>
+                                      <button type="button" class="btn disabled"></button>
+                                      <button type="button" class="btn disabled"></button>
+                                      <button type="button" class="btn disabled"></button>
+                                      <button type="button" class="btn disabled"></button>
+                                      <a class="btn" href="#" role="button" style="font-size: 17px;">Cerrar Sesión</a>
+                                    </div><!--btn-group-vertical-->
+                                </div><!--categorias-->
+                            </div><!--ArteMenu-->
+                            </div><!--subInfo-->
+                        </div><!--infoArtesano-->
+                      </div><!--artesano-->
+                        </div><!--col 1-->
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                          <div class="CardCompleto">
+                            <div class="navCard" style="width: 75rem;">
+                                <!--nav card-->
+                                <div class="card">
+                                    <div class="card-header">
+                                    <div class="row">
+                                      <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                                    
+                                      <div class="navcon">
+                                      <ul class="nav nav-tabs card-header-tabs">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" href="#">Productos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Pendientes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Comentarios</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Pedidos</a>
+                                        </li>
+                                      </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                                      <div class="modBut">
+                                        <button type="button" class="btn bcrear" data-toggle="modal" data-target="#staticBackdrop">
+                                            +
+                                        </button>
+                                      </div><!--Modbut-->
+                                      </div><!--col-->
+                                    </div><!--row -->
+                                  </div><!--card-header-->
+                                  <div class="card-body" id="list-items">
+
+                                </div>
+                                </div><!--card-->
+                            </div><!--navCard-->  
+                        </div><!--CardCompleto-->
+                        </div><!--col 1-->
+        </div><!--row 1-->
+      </div> <!--todo-->  
+
+     
+
+      <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #BDB2FF">
+            <h5 class="modal-title" id="staticBackdropLabel">Crea tu nuevo producto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+
+
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 ml-auto">
+                            <input type="text" class="form-control" id="Nombre_prod" placeholder="Nombre">
+                        </div>
+
+                        <div class="input-group mb-3 mb-auto col-md-3 ml-auto">
+                            <input type="text" class="form-control" id="Medida_prod" placeholder="Medida">                            
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">cm</span>
+                            </div>
+                        </div><!--MEDIDA-->
+
+                        <div class="col-md-3 ml-auto">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <label class="input-group-text" for="inputGroupSelect01">Categorías</label>
+                                </div>
+                                <select class="custom-select" id="Categoria_prod">
+                                    <option value="Categoria:">Categoría:</option>
+                                    <option value="Caricaturas">Caricaturas</option>
+                                    <option value="Celebridades">Celebridades</option>
+                                    <option value="Mascotas">Mascotas</option>
+                                    <option value="Personajes">Personajes</option>
+                                    <option value="Personalizados">Personalizados</option>
+                                    <option value="Superhéroes">Superhéroes</option>
+                                    
+                                </select>
+                              </div>
+                        </div><!--CATEGORIA-->
+
+                        <div class="input-group mb-3 mb-auto col-md-3 ml-auto">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">$</span>
+                            </div>
+                            <input type="text" class="form-control" id="Precio_prod" placeholder="Precio (MXN)">
+                        </div><!--PRECIO-->
+                    </div><!--TERMINA 1ER DIV-->
+
+                    <div class="row">
+                        <div class="col-md-9 ml-auto">
+                            <input type="text" class="form-control" id="Descripcion_prod" placeholder="Descripción">
+                        </div><!--DESCRIPCI?N-->
+
+                        <div class="col-md-3 ml-auto">                            
+                            <div class="custom-file">
+                                <!-- <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01">Elige una Imagen</label> -->
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect01">Imagen</label>
+                                    </div>
+                                        <select class="custom-select" id="Imagen_prod">
+                                        <option value="0">Imagen:</option>
+                                        <option value="../img/muñequitos/batman.jpg">Batman</option>
+                                        <option value="../img/muñequitos/bby.jpg">Baby Yoda</option>
+                                        <option value="../img/muñequitos/carlitos.jpg">Carlitos</option>
+                                        <option value="../img/muñequitos/carol.jpg">Coraline</option>
+                                        <option value="../img/muñequitos/homero.jpg">Homero</option>
+                                        <option value="../img/muñequitos/hp.jpg">Harry Potter Team</option>
+                                        <option value="../img/muñequitos/dog1.jpg">Perrito</option>
+                                        <option value="../img/muñequitos/erizo.jpg">Erizo</option>
+                                        <option value="../img/muñequitos/heyh.jpg">Arnold y Helga</option>
+                                        <option value="../img/muñequitos/iron.jpg">Iron Maiden</option>
+                                        <option value="../img/muñequitos/friend.jpg">Friend</option>
+                                        <option value="../img/muñequitos/chinos.jpg">Muñequita Chinos</option>
+                                        <option value="../img/muñequitos/checoperez.jpg">Checo Perez</option>
+                                        <option value="../img/muñequitos/dog2.jpg">Perrito2</option>
+                                        <option value="../img/muñequitos/k-pop.jpg">k-pop</option>
+                                        <option value="../img/muñequitos/mirrey.jpg">Mirrey</option>
+                                        <option value="../img/muñequitos/nacimiento.jpg">Nacimiento</option>
+                                        <option value="../img/muñequitos/novia.jpg">Novia</option>
+                                        <option value="../img/muñequitos/quetzal.jpg">Quetzal</option>
+                                        <option value="../img/muñequitos/spider-man.jpg">Spider-Man</option>
+                                        </select>
+                                </div>
+
+                                <!--
+                                *******************************
+                                CAMBIAR EL BROWS POR BUSSCAR
+                                AL JUNTAR PEGARLO EN EL CSS
+                                *******************************
+                                -->
+
+
+                            </div>
+                        </div><!--IMAGEN-->
+                    </div><!--TARMINA 2DO DIV-->
+
+                </div>
+            </div>
+
+
+            <div class="modal-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-9 ml-auto" id="alerta">
+                           
+                        </div>
+                        <div class="col-md-3 ml-auto">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancelar" style="background-color:#e67070">Cancelar</button>
+                             <button type="submit" onclick='return SubirNuevo();' class="btn btn-primary" id="guarcambios">Guardar</button> 
+                            <!-- <button type="submit" onclick='return SubirNuevo();' class="btnbtn-primary" >Guardar</button> -->
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+        <footer id="footerModPag"></footer>
+
+      <script src="./../js/footerPag.js"></script>
+    <!-- <script src="../js/navBar.js"></script> -->
+    <script src="../js/anadirProducto.js"></script>
+    <script src="../js/productosAdmin.js"></script>
+    <!-- cambiar js link -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

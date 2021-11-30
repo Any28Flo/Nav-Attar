@@ -1,0 +1,127 @@
+.procesoPersonalizado{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin-top: 3em;
+}
+
+.procesoPersonalizado img{
+    width: 20em;
+    margin: 0;
+    padding: 0
+} 
+
+
+.datosPersonalizado{
+    margin-top: 1.5em;
+    display: flex;
+
+}
+
+.datosPersonalizado_linea {
+    margin: 0 1em 0 0;
+    width: 10%;    
+    border-top: 1px solid #999;
+    position: relative;
+    top: 0.8em;
+    float:left;
+}
+
+.datosPersonalizado_linea-der{
+    margin-left: 1em;
+    width: 60%;
+}
+
+.sepPersonalizado{
+    margin-top: 2em;
+}
+
+
+
+.selectPersonalizado{
+    width: 8em;
+    height: 3em;
+    border-radius: 1em;
+    font: var(--textDescripcionCon);
+}
+
+
+
+.textoPersonalizadoImg{
+    font-size: 0.5em;
+}
+
+.divPerosonalizadoSelect{
+    display: flex;
+    flex-direction: column;
+}
+
+.divPerosonalizadoSelect button{ 
+    width: 10em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #BDB2FF;
+    border-color: #BDB2FF;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-left: 2em;
+}
+
+.divPerosonalizadoSelect button:hover{
+    background-color: #6e66a0;
+    color: #fff;
+    font-weight: 700;
+    border: 0.1em solid #fff;
+    transition-duration: 0.5s;
+}
+
+
+.btnEnviarPersonalizado{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #BDB2FF;
+    border-color: #BDB2FF;
+    border-radius: 0.5em;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.btnEnviarPersonalizado:hover{
+    background-color: #6e66a0;
+    color: #fff;
+    font-weight: 700;
+    border: 0.1em solid #fff;
+    transition-duration: 0.5s;
+}
+
+.divPerosonalizadoSelect-imagen{
+    justify-content: flex-start;
+}
+
+
+.selectPersonalizado option{
+    font: var(--textDescripcionCon);    
+    font-size: 1em;
+    margin: 0.5em 0;
+    padding: 0.5em 0;
+}
+
+
+.imgPersonaizado{
+    width: 10em;
+    height: 10em;
+}
+
+
+
+.formularioTextoPersonalizado{
+    height: 95em;
+}

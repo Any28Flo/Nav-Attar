@@ -1,0 +1,373 @@
+#main{
+    /*background-color: rgba(252, 206, 214, 0.281);*/
+    display: flex;
+    justify-content: center;
+} 
+
+
+/*---------------------------------------------------------------
+ ||  carrusel 
+  -----------------------------------------------------------------*/
+
+.carousel-item {
+
+    margin: 20px;
+    
+    padding-top:10px;
+    padding-left: 90px;
+    padding-right: 90px;  
+}
+.imagen img{
+    border-radius: 150px;
+}
+
+/*---------------------------------------------------------------
+ ||  Titulos de colores 
+  -----------------------------------------------------------------*/
+  @font-face {
+    font-family: MiFuentePersonal;
+    src: url("/fuentes/ropest/Ropest_PERSONAL_USE_ONLY.ttf") format("opentype");
+}
+
+  .frase {
+  
+    text-align: center;
+    padding-top: 20px;
+    font-family: MiFuentePersonal;
+    font-size: 60px;   
+ }
+ 
+  .frase h4{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: MiFuentePersonal;
+    /* font-weight: bolder;
+    color: transparent;
+    background: linear-gradient(to left, #ff5bf9, #7B68EE, #a47fcd, #08c0ff, #ff5bf9);    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    animation: color 3s linear infinite;
+    background-size: 500%; */
+}
+
+.frase2 h4{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: MiFuentePersonal;
+    padding-bottom: 20px;
+    /* font-weight: bolder;
+    color: transparent;
+    background: linear-gradient(to left, #ff5bf9, #7B68EE, #a47fcd, #08c0ff, #ff5bf9);    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    animation: color 3s linear infinite;
+    background-size: 500%; */
+}
+
+#promo{
+    text-align: center;
+    font-family: MiFuentePersonal;
+    font-size: 10px;
+}
+
+/*---------------------------------------------------------------
+ ||  Sección para personalizar
+  -----------------------------------------------------------------*/
+  .promoInicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.promoInicio img{
+
+    width: 200px;
+    height: 300px;
+}
+
+#personal{
+
+    border-radius: 1.5em;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+#personal:hover{
+
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+    transform: translateY(-3%);
+}
+
+/*---------------------------------------------------------------
+ ||  modeloResponsivo        
+  -----------------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) { 
+
+    .carousel-item {
+
+        margin: 20px;
+    
+        padding-top:10px;
+        padding-left: 20px;
+        padding-right: 20px;  
+    }
+  
+    .frase2 h4{
+
+    font-size: 5px;
+    padding-top: 20px;
+   }
+
+    .frase h4{
+
+        padding-bottom: 20px;
+        font-size: 5px;
+
+    }
+
+    .container2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+} 
+
+@media only screen and (max-width: 769px) { 
+
+    .frase2 img{
+     width: 300px;
+     height: auto;
+     padding-top: 20px;
+    }
+ 
+     .frase img{
+ 
+         padding-bottom: 20px;
+         width: 600px;
+         height: auto;
+ 
+     }
+ 
+     .container2{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 10px;
+     }
+ 
+ } 
+
+ /* ipad pro */
+@media only screen 
+and (min-width: 1024px) 
+and (max-height: 1366px)  {
+
+    .frase img{
+ 
+        padding-bottom: 20px;
+        width: 800px;
+        height: auto;
+
+    }
+
+  
+}
+
+
+
+.frase h4{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    /* font-weight: bolder;
+    color: transparent;
+    background: linear-gradient(to left, #ff5bf9, #7B68EE, #a47fcd, #08c0ff, #ff5bf9);    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    animation: color 3s linear infinite;
+    background-size: 500%; */
+}
+
+.botonInicio{
+
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+}
+
+.despedidaInicio{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+
+
+.botonInicio a{
+    font: var(--textTitulos);
+    font-size: 1.8em;
+    background-color: var(--colorMoradoNav);
+    border-color: var(--colorMoradoNav);
+    border-radius: 3px;
+    width: 10em;
+    height: 2em;
+    color: black;
+    padding-top: 6px;
+}
+
+.despedidaInicio img{
+
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.despedidaInicio{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.despedidaInicio img{
+
+    width: 200px;
+    height: 200px;
+}
+
+.despedidaInicio{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+/*---------------------------------------------------------------
+ ||  modeloResponsivo        
+  -----------------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) { 
+
+    .carousel-item {
+        margin:0px;
+        padding-top:10px;
+        padding-left: 20px;
+        padding-right: 20px;  
+    }
+  
+    #tituloinicio2{
+    font-size: 30px;
+    padding-top: 20px;
+   }
+
+    #tituloinicio{
+        font-size: 20px;
+        text-align: center;
+    }
+
+   
+    .promoInicio{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+    }
+
+    #personal{
+
+        width: 90px;
+        height: 130px;
+    }
+
+    #despedidaF{
+
+        width: 90px;
+        height: 90px;
+    }
+
+    .botonInicio{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .botonInicio a{
+        font: var(--textTitulos);
+        font-size: 1em;
+        background-color: var(--colorMoradoNav);
+        border-color: var(--colorMoradoNav);
+        border-radius: 3px;
+        width: 10em;
+        height: 2em;
+        color: black;
+        padding-top: 6px;
+    }
+
+} 
+
+@media only screen and (max-width: 769px) { 
+
+    .carousel-item {
+        margin:0px;
+        padding-top:15px;
+        padding-left: 30px;
+        padding-right: 30px;  
+    }
+
+    .promoInicio{
+
+        padding-bottom: 20px;
+    }
+
+    .despedidaInicio{
+
+        padding-top: 40px;
+    }
+    #personal{
+
+        width: 100px;
+        height: 140px;
+    }    
+
+    #despedidaF{
+
+        width: 90px;
+        height: 90px;
+    }
+ } 
+
+ 
+
+
+
+
+
+
+
+
+
